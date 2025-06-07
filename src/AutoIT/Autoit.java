@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Autoit {
 
@@ -13,6 +14,8 @@ public class Autoit {
 		//This method works to perform desktop operation for download and upload file
 		
 		WebDriver driver = new ChromeDriver();
+		
+		//RemoteWebDriver driver = new ChromeDriver();
 		driver.get("https://www.selenium.dev/downloads/");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
